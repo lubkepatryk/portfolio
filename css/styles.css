@@ -55,8 +55,7 @@ section {
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 1rem var(--main-color);
-  transition: .3s ease;
-
+  transition: 0.3s ease;
 }
 
 .logo:hover {
@@ -86,10 +85,13 @@ section {
 }
 
 @keyframes animate {
-  0%, 10%, 100% {
+  0%,
+  10%,
+  100% {
     width: 0;
   }
-  70%, 90% {
+  70%,
+  90% {
     width: 100%;
   }
 }
@@ -218,7 +220,7 @@ span {
 }
 
 .services h2 {
-margin-bottom: 5rem;
+  margin-bottom: 5rem;
 }
 
 .services-container {
@@ -230,14 +232,13 @@ margin-bottom: 5rem;
 }
 
 .services-container .services-box {
-flex: 1 1 30rem;
-background: var(--second-bg-color
-);
-padding: 3rem 2rem 4rem;
-/* border-radius: 4rem; */
-text-align: center;
-border: .2rem solid var(--bg-color);
-transition: .3s ease;
+  flex: 1 1 30rem;
+  background: var(--second-bg-color);
+  padding: 3rem 2rem 4rem;
+  /* border-radius: 4rem; */
+  text-align: center;
+  border: 0.2rem solid var(--bg-color);
+  transition: 0.3s ease;
 }
 
 .services-container .services-box:hover {
@@ -255,8 +256,8 @@ transition: .3s ease;
 }
 
 .services-box p {
-font-size: 1.6rem;
-margin: 1rem 0 3rem;
+  font-size: 1.6rem;
+  margin: 1rem 0 3rem;
 }
 
 .portfolio {
@@ -284,7 +285,7 @@ margin: 1rem 0 3rem;
 
 .portfolio-box img {
   width: 100%;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 .portfolio-box:hover img {
@@ -297,7 +298,7 @@ margin: 1rem 0 3rem;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -305,7 +306,7 @@ margin: 1rem 0 3rem;
   text-align: center;
   padding: 0 4rem;
   transform: translateY(100%);
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .portfolio-box:hover .portfolio-layer {
@@ -318,7 +319,7 @@ margin: 1rem 0 3rem;
 
 .portfolio-layer p {
   font-size: 1.6rem;
-  margin: .3rem 0 1rem;
+  margin: 0.3rem 0 1rem;
 }
 
 .portfolio-layer a {
@@ -334,4 +335,76 @@ margin: 1rem 0 3rem;
 .portfolio-layer a i {
   font-size: 2rem;
   color: var(--second-bg-color);
+}
+
+.contact h2 {
+  margin-bottom: 3rem;
+}
+
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input, .contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  background: var(--second-bg-color);
+  /* border-radius: .8rem; */
+  margin: .7rem 0;
+}
+
+.contact form .input-box input {
+  width: 49%;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form .btn {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  background: var(--second-bg-color);
+}
+
+.footer-text p {
+  font-size: 1.6rem;
+}
+
+.footer-iconTop a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: .8rem;
+  background: var(--main-color);
+  /* border-radius: .8rem; */
+  transition: .3s ease;
+}
+
+.footer-iconTop a:hover {
+  box-shadow: 0 0 1rem var(--main-color);
+} 
+
+.footer-iconTop a i {
+  font-size: 2.4rem;
+  color: var(--second-bg-color
+  );
 }
