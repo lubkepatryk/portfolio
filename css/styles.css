@@ -127,6 +127,19 @@ section {
 .home-img img {
   height: 25vw;
   box-shadow: 0 0 10rem var(--main-color);
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2.4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .home-content h3 {
